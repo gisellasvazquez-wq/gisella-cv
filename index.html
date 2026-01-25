@@ -83,6 +83,18 @@ h1 {
   color: var(--muted);
 }
 
+.contact a {
+  color: var(--muted);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact a:hover {
+  color: var(--accent);
+}
+
 section {
   margin-bottom: 50px;
 }
@@ -161,8 +173,7 @@ footer {
 
 <header>
   <div class="photo">
-    <!-- Reemplazá por tu foto -->
-    <img src="foto-gise.png" alt="Gisella Sofia Vazquez">
+    <img src="your-photo.jpg" alt="Gisella Sofia Vazquez">
   </div>
 
   <div>
@@ -172,8 +183,12 @@ footer {
 
     <div class="contact">
       <div>📍 Buenos Aires, Argentina</div>
-      <div>📞 +54 011 40343247</div>
-      <div>✉️ gisella.svazquez@gmail.com</div>
+
+      <a href="tel:+5401140343247">📞 +54 011 40343247</a>
+
+      <a href="mailto:gisella.svazquez@gmail.com">✉️ gisella.svazquez@gmail.com</a>
+
+      <a href="https://www.linkedin.com/in/gisella-sof%C3%ADa-vazquez-4ab40a196/" target="_blank">💼 LinkedIn</a>
     </div>
   </div>
 </header>
