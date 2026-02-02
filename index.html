@@ -38,14 +38,13 @@ header {
   grid-template-columns: 180px 1fr;
   gap: 30px;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .photo {
   width: 180px;
   height: 180px;
   border-radius: 20px;
-  background: #020617;
   border: 2px solid var(--accent);
   overflow: hidden;
 }
@@ -97,7 +96,7 @@ section {
   color: var(--accent);
   margin-bottom: 15px;
   border-bottom: 1px solid #1e293b;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 .card {
@@ -137,7 +136,7 @@ li {
   font-size: 0.85rem;
 }
 
-/* Freelance / Fractional Leadership */
+/* Fractional / Freelance */
 .insights-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -158,14 +157,8 @@ li {
 }
 
 .insight-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
   color: var(--accent);
-}
-
-.insight-card p {
-  font-size: 0.95rem;
-  color: var(--text);
+  margin-bottom: 10px;
 }
 
 .cta {
@@ -220,12 +213,10 @@ footer {
   <div class="photo">
     <img src="fotoperfilwebpage.png" alt="Gisella Sofia Vazquez">
   </div>
-
   <div>
     <h1>Gisella Sofia Vazquez</h1>
     <div class="subtitle">AI & Identity Systems Leader</div>
     <div class="tagline">Ethical • Sustainable • Human-Centered</div>
-
     <div class="contact">
       <div>📍 Buenos Aires, Argentina</div>
       <a href="tel:+5401140343247">📞 +54 011 40343247</a>
@@ -235,24 +226,156 @@ footer {
   </div>
 </header>
 
+<!-- ABOUT -->
 <section>
   <div class="section-title">About Me</div>
   <div class="card">
     <p>
-      I lead identity and agentic AI systems in complex environments, working at the intersection of IT, cloud architectures, AI and leadership.
+      I lead identity and agentic AI systems in complex environments, working at the intersection of IT, cloud architectures,
+      AI and leadership. With a strong background in Identity & Access Management, Cloud and Agile delivery, I guide teams
+      and systems through complexity with clarity, purpose and strong delivery focus.
+    </p>
+    <br>
+    <p>
+      My professional path is informed by a deep commitment to responsible decision-making and environmental awareness,
+      shaped through years of involvement in community and NGO initiatives.
     </p>
   </div>
 </section>
 
-<section class="freelance-insights">
-  <div class="section-title">Fractional Technology & Security Leadership</div>
+<!-- EXPERIENCE -->
+<section>
+  <div class="section-title">Management Experience</div>
 
-  <p style="color: var(--muted); max-width: 750px; margin-bottom: 40px;">
-    I help organizations scale their technology and security without the cost or rigidity of a full-time CTO or CISO.
-    My work focuses on clarity, governance, and delivery in complex technical environments.
+  <div class="card">
+    <strong>Accenture — 2023 to Present</strong>
+    <p>
+      Orchestrated the evolution of a critical ITDR security platform, guiding global teams through change management,
+      incident response and vendor governance.
+    </p>
+    <ul>
+      <li>Led agile delivery across 15+ teams as Scrum Master / RTE.</li>
+      <li>Improved velocity, flow metrics and delivery predictability.</li>
+      <li>Orchestrated PI Planning and cross-stakeholder alignment.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <strong>PwC — 2019 to 2023</strong>
+    <p>
+      Built a strong foundation in global IAM operations for highly regulated environments.
+    </p>
+    <ul>
+      <li>Improved access governance and audit readiness.</li>
+      <li>Supported IAM lifecycle across SailPoint and CyberArk.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- TECH + CERTS -->
+<section class="grid-2">
+  <div>
+    <div class="section-title">Tech Stack</div>
+    <div class="card badges">
+      <span class="badge">Agentic AI</span>
+      <span class="badge">M365 Copilot</span>
+      <span class="badge">Copilot Studio</span>
+      <span class="badge">Proofpoint ITDR</span>
+      <span class="badge">SailPoint</span>
+      <span class="badge">CyberArk</span>
+      <span class="badge">Azure / Entra ID</span>
+      <span class="badge">GCP</span>
+      <span class="badge">ServiceNow</span>
+      <span class="badge">Azure DevOps</span>
+      <span class="badge">Jira Align</span>
+    </div>
+  </div>
+
+  <div>
+    <div class="section-title">Certifications</div>
+    <div class="card">
+      <ul>
+        <li>Agentic AI Certification — Stanford Partner Program</li>
+        <li>Microsoft Azure AZ-900</li>
+        <li>AWS Cloud Training</li>
+        <li>Cybersecurity Essentials — Cisco</li>
+        <li>ITIL 4 — AXELOS</li>
+        <li>Scrum Master — Accenture</li>
+        <li>Professional Coaching — Escuela de Formación de Líderes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- AGILE -->
+<section>
+  <div class="section-title">Agile & Leadership</div>
+  <div class="card">
+    <p>
+      I lead by empowering people and creating high-trust environments. I work as Release Train Engineer,
+      Scrum Master and Product Ownership support.
+    </p>
+    <div class="badges">
+      <span class="badge">RTE</span>
+      <span class="badge">Scrum Master</span>
+      <span class="badge">PI Planning</span>
+      <span class="badge">Velocity & Flow</span>
+      <span class="badge">Stakeholder Alignment</span>
+      <span class="badge">Continuous Improvement</span>
+    </div>
+  </div>
+</section>
+
+<!-- SUSTAINABILITY -->
+<section>
+  <div class="section-title">Sustainability & Community Impact</div>
+  <div class="card">
+    <ul>
+      <li>Environmental & Sustainability Specialization — University of Barcelona</li>
+      <li>LEED-oriented projects</li>
+      <li>Community Environmental Project: Memorial Forests (Buenos Aires, 2024)</li>
+      <li>Long-term environmental thinking & responsible design</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FRACTIONAL -->
+<section>
+  <div class="section-title">Fractional Technology & Security Leadership</div>
+  <p style="color:var(--muted); max-width:750px; margin-bottom:40px;">
+    I help organizations scale technology and security without the cost of a full-time CTO or CISO.
   </p>
 
   <div class="insights-grid">
     <div class="insight-card">
       <h3>🔐 Identity & Access Management</h3>
-      <p>IAM strategies that reduce risk, simplify access, and align security with business needs.</p>
+      <p>IAM strategies aligned with business and risk.</p>
+    </div>
+    <div class="insight-card">
+      <h3>☁️ Cloud & Security Strategy</h3>
+      <p>Secure, scalable cloud architectures.</p>
+    </div>
+    <div class="insight-card">
+      <h3>🚨 Incident Readiness</h3>
+      <p>Structured response and recovery leadership.</p>
+    </div>
+    <div class="insight-card">
+      <h3>🧭 Agile Delivery</h3>
+      <p>Cross-functional delivery at scale.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <p>Available for short-term projects or ongoing fractional leadership.</p>
+    <a href="mailto:gisella.svazquez@gmail.com" class="cta-button">Let’s work together</a>
+  </div>
+</section>
+
+<footer>
+  Technology amplifies power. Leadership sets direction. Ethics turn it into long-term value.
+</footer>
+
+</div>
+
+</body>
+</html>
