@@ -3,378 +3,153 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gisella Sofia Vazquez — AI & Identity Systems Leader</title>
+<title>Gisella Sofia Vazquez | Release Train Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root {
-  --bg: #0f172a;
-  --card: #020617;
-  --text: #e5e7eb;
-  --muted: #94a3b8;
-  --accent: #38bdf8;
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif;}
+
+body{
+background:#fff;
+color:#111;
+max-width:880px;
+margin:auto;
+padding:42px;
+line-height:1.45;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+h1{font-size:27px;font-weight:700;}
+.tagline{font-size:14px;margin-top:4px;margin-bottom:14px;font-weight:600;}
+
+.contact{
+font-size:13px;
+margin-bottom:26px;
+color:#333;
 }
 
-body {
-  background: linear-gradient(135deg, #020617, #0f172a);
-  color: var(--text);
-  line-height: 1.6;
+.section{margin-bottom:26px;}
+
+.section h2{
+font-size:13px;
+letter-spacing:1px;
+text-transform:uppercase;
+border-bottom:1px solid #d0d0d0;
+padding-bottom:4px;
+margin-bottom:10px;
 }
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
+.role{margin-bottom:14px;}
+.role h3{font-size:14px;font-weight:600;}
+.role span{font-size:12px;color:#555;}
+
+ul{padding-left:18px;margin-top:6px;}
+li{font-size:13px;margin-bottom:4px;}
+
+.highlight{font-weight:600;}
+
+.value-box{
+background:#f6f7f8;
+padding:10px 12px;
+border-left:3px solid #111;
+margin-top:8px;
+font-size:13px;
 }
 
-header {
-  display: grid;
-  grid-template-columns: 180px 1fr;
-  gap: 30px;
-  align-items: center;
-  margin-bottom: 60px;
-}
+.skills{font-size:13px;line-height:1.6;}
 
-.photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 20px;
-  border: 2px solid var(--accent);
-  overflow: hidden;
-}
-
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-h1 {
-  font-size: 2.4rem;
-}
-
-.subtitle {
-  color: var(--accent);
-  font-weight: 600;
-  margin: 8px 0;
-}
-
-.tagline {
-  color: var(--muted);
-}
-
-.contact {
-  margin-top: 15px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 0.95rem;
-  color: var(--muted);
-}
-
-.contact a {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.contact a:hover {
-  color: var(--accent);
-}
-
-section {
-  margin-bottom: 60px;
-}
-
-.section-title {
-  font-size: 1.4rem;
-  color: var(--accent);
-  margin-bottom: 15px;
-  border-bottom: 1px solid #1e293b;
-  padding-bottom: 6px;
-}
-
-.card {
-  background: rgba(2,6,23,0.7);
-  border: 1px solid #1e293b;
-  border-radius: 16px;
-  padding: 25px;
-  margin-bottom: 20px;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 8px;
-}
-
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.badge {
-  background: rgba(56,189,248,0.1);
-  border: 1px solid rgba(56,189,248,0.3);
-  color: var(--accent);
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-}
-
-/* Fractional / Freelance */
-.insights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-}
-
-.insight-card {
-  background: rgba(2,6,23,0.8);
-  border: 1px solid #1e293b;
-  border-radius: 14px;
-  padding: 24px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.insight-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-
-.insight-card h3 {
-  color: var(--accent);
-  margin-bottom: 10px;
-}
-
-.cta {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.cta p {
-  color: var(--muted);
-}
-
-.cta-button {
-  background-color: var(--accent);
-  color: #020617;
-  padding: 14px 28px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-footer {
-  text-align: center;
-  color: var(--muted);
-  margin-top: 60px;
-  font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-  header {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-  .photo {
-    margin: auto;
-  }
-  .grid-2 {
-    grid-template-columns: 1fr;
-  }
-}
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<h1>Gisella Sofia Vazquez</h1>
+<div class="tagline">Release Train Engineer | Agile Delivery Lead | Remote-Ready</div>
 
-<header>
-  <div class="photo">
-    <img src="fotoperfilwebpage.png" alt="Gisella Sofia Vazquez">
-  </div>
-  <div>
-    <h1>Gisella Sofia Vazquez</h1>
-    <div class="subtitle">AI & Identity Systems Leader</div>
-    <div class="tagline">Ethical • Sustainable • Human-Centered</div>
-    <div class="contact">
-      <div>📍 Buenos Aires, Argentina</div>
-      <a href="tel:+5401140343247">📞 +54 011 40343247</a>
-      <a href="mailto:gisella.svazquez@gmail.com">✉️ gisella.svazquez@gmail.com</a>
-      <a href="https://www.linkedin.com/in/gisella-sof%C3%ADa-vazquez-4ab40a196/" target="_blank">💼 LinkedIn</a>
-    </div>
-  </div>
-</header>
+<div class="contact">
+Buenos Aires (GMT-3) — Overlap with US/EU time zones<br>
++54 11 4034-3247 | gisella.svazquez@gmail.com | linkedin.com/in/gisella-sofía-vazquez
+</div>
 
-<!-- ABOUT -->
-<section>
-  <div class="section-title">About Me</div>
-  <div class="card">
-    <p>
-      I lead identity and agentic AI systems in complex environments, working at the intersection of IT, cloud architectures,
-      AI and leadership. With a strong background in Identity & Access Management, Cloud and Agile delivery, I guide teams
-      and systems through complexity with clarity, purpose and strong delivery focus.
-    </p>
-    <br>
-    <p>
-      My professional path is informed by a deep commitment to responsible decision-making and environmental awareness,
-      shaped through years of involvement in community and NGO initiatives.
-    </p>
-  </div>
-</section>
+<div class="section">
+<h2>Professional Profile</h2>
+<p>
+Release Train Engineer and Senior Scrum Master experienced in coordinating distributed teams and stabilizing delivery in growing organizations. Focused on <span class="highlight">predictable delivery, dependency management, and stakeholder alignment</span> while integrating service management practices (ITIL v4) into product development environments.
+</p>
 
-<!-- EXPERIENCE -->
-<section>
-  <div class="section-title">Management Experience</div>
+<div class="value-box">
+Typical engagement: helping organizations move from reactive delivery to reliable planning cycles and measurable execution.
+</div>
+</div>
 
-  <div class="card">
-    <strong>Accenture — 2023 to Present</strong>
-    <p>
-      Orchestrated the evolution of a critical ITDR security platform, guiding global teams through change management,
-      incident response and vendor governance.
-    </p>
-    <ul>
-      <li>Led agile delivery across 15+ teams as Scrum Master / RTE.</li>
-      <li>Improved velocity, flow metrics and delivery predictability.</li>
-      <li>Orchestrated PI Planning and cross-stakeholder alignment.</li>
-    </ul>
-  </div>
+<div class="section">
+<h2>Professional Experience</h2>
 
-  <div class="card">
-    <strong>PwC — 2019 to 2023</strong>
-    <p>
-      Built a strong foundation in global IAM operations for highly regulated environments.
-    </p>
-    <ul>
-      <li>Improved access governance and audit readiness.</li>
-      <li>Supported IAM lifecycle across SailPoint and CyberArk.</li>
-    </ul>
-  </div>
-</section>
+<div class="role">
+<h3>Release Train Engineer / Senior Scrum Master</h3>
+<span>2023 – Present</span>
+<ul>
+<li>Coordinating multiple teams across shared roadmap and dependencies</li>
+<li>Facilitating PI Planning and cross-team alignment sessions</li>
+<li>Improved predictability and reduced sprint spillover</li>
+<li>Established delivery metrics dashboards for leadership</li>
+<li>Provided transparency and risk visibility for stakeholders</li>
+</ul>
 
-<!-- TECH + CERTS -->
-<section class="grid-2">
-  <div>
-    <div class="section-title">Tech Stack</div>
-    <div class="card badges">
-      <span class="badge">Agentic AI</span>
-      <span class="badge">M365 Copilot</span>
-      <span class="badge">Copilot Studio</span>
-      <span class="badge">Proofpoint ITDR</span>
-      <span class="badge">SailPoint</span>
-      <span class="badge">CyberArk</span>
-      <span class="badge">Azure / Entra ID</span>
-      <span class="badge">GCP</span>
-      <span class="badge">ServiceNow</span>
-      <span class="badge">Azure DevOps</span>
-      <span class="badge">Jira Align</span>
-    </div>
-  </div>
+<div class="value-box">
+Business impact: increased confidence in roadmap commitments and reduced delivery uncertainty
+</div>
+</div>
 
-  <div>
-    <div class="section-title">Certifications</div>
-    <div class="card">
-      <ul>
-        <li>Agentic AI Certification — Stanford Partner Program</li>
-        <li>Microsoft Azure AZ-900</li>
-        <li>AWS Cloud Training</li>
-        <li>Cybersecurity Essentials — Cisco</li>
-        <li>ITIL 4 — AXELOS</li>
-        <li>Scrum Master — Accenture</li>
-        <li>Professional Coaching — Escuela de Formación de Líderes</li>
-      </ul>
-    </div>
-  </div>
-</section>
+<div class="role">
+<h3>Scrum Master — Startup Environment</h3>
+<span>2020 – 2022</span>
+<ul>
+<li>Introduced Scrum framework in early-stage team</li>
+<li>Structured backlog refinement and planning cadence</li>
+<li>Coached Product Owner on prioritization strategy</li>
+<li>Built Azure DevOps tracking dashboards</li>
+</ul>
 
-<!-- AGILE -->
-<section>
-  <div class="section-title">Agile & Leadership</div>
-  <div class="card">
-    <p>
-      I lead by empowering people and creating high-trust environments. I work as Release Train Engineer,
-      Scrum Master and Product Ownership support.
-    </p>
-    <div class="badges">
-      <span class="badge">RTE</span>
-      <span class="badge">Scrum Master</span>
-      <span class="badge">PI Planning</span>
-      <span class="badge">Velocity & Flow</span>
-      <span class="badge">Stakeholder Alignment</span>
-      <span class="badge">Continuous Improvement</span>
-    </div>
-  </div>
-</section>
+<div class="value-box">
+Business impact: transition from ad-hoc development to structured delivery cycles
+</div>
+</div>
 
-<!-- SUSTAINABILITY -->
-<section>
-  <div class="section-title">Sustainability & Community Impact</div>
-  <div class="card">
-    <ul>
-      <li>Environmental & Sustainability Specialization — University of Barcelona</li>
-      <li>LEED-oriented projects</li>
-      <li>Community Environmental Project: Memorial Forests (Buenos Aires, 2024)</li>
-      <li>Long-term environmental thinking & responsible design</li>
-    </ul>
-  </div>
-</section>
+<div class="role">
+<h3>Quality Assurance Initiative — ITIL v4</h3>
+<span>2020 – 2022</span>
+<ul>
+<li>Integrated incident & problem management into development flow</li>
+<li>Reduced recurring defects via continuous improvement</li>
+<li>Aligned operational support with development lifecycle</li>
+</ul>
 
-<!-- FRACTIONAL -->
-<section>
-  <div class="section-title">Fractional Technology & Security Leadership</div>
-  <p style="color:var(--muted); max-width:750px; margin-bottom:40px;">
-    I help organizations scale technology and security without the cost of a full-time CTO or CISO.
-  </p>
+<div class="value-box">
+Business impact: fewer production issues and improved operational stability
+</div>
+</div>
 
-  <div class="insights-grid">
-    <div class="insight-card">
-      <h3>🔐 Identity & Access Management</h3>
-      <p>IAM strategies aligned with business and risk.</p>
-    </div>
-    <div class="insight-card">
-      <h3>☁️ Cloud & Security Strategy</h3>
-      <p>Secure, scalable cloud architectures.</p>
-    </div>
-    <div class="insight-card">
-      <h3>🚨 Incident Readiness</h3>
-      <p>Structured response and recovery leadership.</p>
-    </div>
-    <div class="insight-card">
-      <h3>🧭 Agile Delivery</h3>
-      <p>Cross-functional delivery at scale.</p>
-    </div>
-  </div>
+</div>
 
-  <div class="cta">
-    <p>Available for short-term projects or ongoing fractional leadership.</p>
-    <a href="mailto:gisella.svazquez@gmail.com" class="cta-button">Let’s work together</a>
-  </div>
-</section>
+<div class="section">
+<h2>Core Capabilities</h2>
+<ul>
+<li>Release Train Facilitation</li>
+<li>Dependency Management</li>
+<li>Delivery Forecasting</li>
+<li>Stakeholder Alignment</li>
+<li>Agile Coaching</li>
+<li>Continuous Improvement</li>
+</ul>
+</div>
 
-<footer>
-  Technology amplifies power. Leadership sets direction. Ethics turn it into long-term value.
-</footer>
-
+<div class="section">
+<h2>Tools & Frameworks</h2>
+<div class="skills">
+SAFe • Scrum • ITIL v4 • Azure DevOps • Jira • Kanban • Agile Metrics • Risk Management
+</div>
 </div>
 
 </body>
